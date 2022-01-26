@@ -27,12 +27,13 @@ public:
                 q.pop();
                 for(auto i: v[h]){
                     indegree[i]--;
-                    if(indegree[i]==0) q.push(i);
+                    if(indegree[i]==0) 
+                    q.push(i);
                 }
                 ans.push_back(h);
             }
         }
         vector<int>x;
-        return ans.size()==numCourses ?ans:x;
+        return ans.size()==numCourses ? ans : x;
     }
 };
