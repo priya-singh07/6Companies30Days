@@ -19,6 +19,7 @@ class Solution{
             if(arr[i] > l[i] && arr[i] < h[i])
                 return {l[i], arr[i], h[i]};
         }
+        
         return {};
     }
 };
